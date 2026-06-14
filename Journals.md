@@ -3,3 +3,4 @@ On june 4 and 5 i thought about an idea and made a rough sketch of this website.
 june 6 : i spent hours learning about connecting api but failed.
 june 7 : api set up done fianlly.
 june 10 : small task : removed background of cat pics and added in code
+june 14 : added css
