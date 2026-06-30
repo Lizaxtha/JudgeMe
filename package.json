@@ -4,6 +4,7 @@
   "description": "",
   "main": "JudgeMe.js",
   "scripts": {
+    "start": "node send.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
