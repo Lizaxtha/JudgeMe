@@ -1,6 +1,6 @@
 async function judge(){
 
-  const response = await fetch("http://localhost:3000/judge", {
+  const response = await fetch("/judge", {
   
     method:"POST",
     headers : {

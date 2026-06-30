@@ -1,9 +1,15 @@
+import path from "path";
+import{ fileURLToPath} from "url";
+
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
 
 import { GoogleGenAI } from "@google/genai";
+
+const _filename=fileURLTOPath(import.meta.url);
+const _dirname =path.dirname(_filename);
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
@@ -20,7 +26,9 @@ const models =[
     "gemini-2.0-flash",
     "gemini-2.0-flash-lite"
 ];
-
+app.get("/",(req,res)=>{
+    res.sendFile(path.join(_dirname,"JudgeMe.html"));
+});
 app.post("/judge",async(req,res)=>{
     // console.log(req.body);
     const userMessage = req.body.message;
@@ -88,3 +96,6 @@ Be sarcastic.
  app.listen(3000,()=>{
 console.log("server running on port 3000");
  });
+
+ app.use(express.json());
+ app.use(express.static(_dirname));
