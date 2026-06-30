@@ -89,7 +89,7 @@ Be sarcastic.
     }
 }
     }
-    return res.status(500).jason({
+    return res.status(500).json({
         reply:"all my cat brains stopped working"
     });
 });
