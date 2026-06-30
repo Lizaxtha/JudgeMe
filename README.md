@@ -8,6 +8,7 @@ HTML, CSS, Javascript, Nodejs, Gemini API, Express is used to create it.
 
 How to use it?
 SIMPLE PROCESS:
+go on this link = https://judgeme-1.onrender.com
 
 LONG PROCESS :
 clone it using this repo.
