@@ -8,7 +8,7 @@ dotenv.config();
 
 import { GoogleGenAI } from "@google/genai";
 
-const _filename=fileURLTOPath(import.meta.url);
+const _filename=fileURLToPath(import.meta.url);
 const _dirname =path.dirname(_filename);
 
 const ai = new GoogleGenAI({
